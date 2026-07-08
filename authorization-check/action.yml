@@ -26,7 +26,7 @@ runs:
       uses: actions/checkout@v6
       with:
         repository: strands-agents/devtools
-        ref: main
+        ref: ${{ github.action_ref }}
         path: _authorization-check
         sparse-checkout: |
           authorization-check/scripts

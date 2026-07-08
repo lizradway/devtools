@@ -21,7 +21,7 @@ runs:
       uses: actions/checkout@v6
       with:
         repository: strands-agents/devtools
-        ref: main
+        ref: ${{ github.action_ref }}
         sparse-checkout: |
           strands-command/scripts
           strands-command/agent-sops
